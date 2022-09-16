@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- the important part here is naming the correct .css file you want to load! -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}"> 
+        <!-- important to note, that the location of filename by default, is going to look for things in a 'static' folder -->
+    </head>
+    <body>
+        <header>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Contact page</li>
+                </ol>
+              </nav>
+        </header>
+
+        <div class="alert alert-success" role="alert">
+            Successfully entered!
+          </div>
+
+
+
+        <h1> This is the contact page :)</h1>
+        <button  type="button" class="btn btn-secondary"> Call 988! </button>
+        <button type="button" class="btn btn-info"> Don't call 988! </button>
+        <p> This is a line of text</p>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.thirdsectorcap.org/wp-content/uploads/2022/01/988-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">988</h5>
+              <p class="card-text">Mental health hotline.</p>
+              <a href="#" class="btn btn-primary">Call if you need!</a>
+            </div>
+          </div>
+
+
+
+
+
+    </body>
+</html>
