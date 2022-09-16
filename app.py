@@ -11,7 +11,7 @@ def home_page():
 
 @app.route('/contactus')
 def contact_page():
-    return render_template('contact.html')
+    return render_template('contactpage.html')
     
 
 if __name__ == '__main__':
